@@ -3,7 +3,7 @@
 > Documentación oficial de la materia **Sintaxis y Semántica de los Lenguajes** · UTN FRBA  
 > Construido con [Docusaurus](https://docusaurus.io/) · Deployado en [Vercel](https://vercel.com/)
 
-[![Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://ssl-frba.vercel.app)
+[![Deploy](https://img.shields.io/badge/deploy-vercel-black?logo=vercel)](https://ssl-docs-git-main-daniel-peraltas-projects.vercel.app/)
 [![Docusaurus](https://img.shields.io/badge/docusaurus-3.x-3ECC5F?logo=docusaurus&logoColor=white)](https://docusaurus.io/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-003087)](CONTRIBUTING.md)
 [![License](https://img.shields.io/badge/license-MIT-C8102E)](LICENSE)
@@ -12,7 +12,7 @@
 
 ## 🌐 Sitio
 
-**[ssl-frba.vercel.app](https://ssl-frba.vercel.app)** ← documentación en vivo
+**[Documentación Online](https://ssl-docs-git-main-daniel-peraltas-projects.vercel.app/)** ← documentación en vivo
 
 ---
 

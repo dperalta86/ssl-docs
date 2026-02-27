@@ -11,12 +11,12 @@ const config: Config = {
     v4: true,
   },
 
-  // ⚠️ Actualizar con la URL real de Vercel una vez deployado
-  url: 'https://ssl-frba.vercel.app',
+  // ⚠️ Actualizar con la URL una vez que se tenga dominio
+  url: 'https://ssl-docs-git-main-daniel-peraltas-projects.vercel.app/',
   baseUrl: '/',
 
   // ⚠️ Actualizar con la org y repo real de GitHub
-  organizationName: 'ssl-frba',
+  organizationName: 'dperalta86',
   projectName: 'ssl-docs',
 
   onBrokenLinks: 'throw',
@@ -33,8 +33,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // ⚠️ Actualizar con la URL real del repo para el botón "Editar esta página"
-          editUrl: 'https://github.com/ssl-frba/ssl-docs/tree/main/',
+          // ⚠️ Idem, actualizar con la URL real del repo para el botón "Editar esta página"
+          editUrl: 'https://github.com/dperalta86/ssl-docs/tree/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
