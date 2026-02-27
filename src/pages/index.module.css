@@ -1,0 +1,94 @@
+/**
+ * SSL – UTN FRBA | index.module.css
+ * Estilos del hero de la página de inicio
+ */
+
+.heroBanner {
+  padding: 5rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #003087 0%, #00205c 100%);
+  color: #ffffff;
+}
+
+/* Patrón sutil de fondo */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.04) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, rgba(200,16,46,0.12) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.heroBanner .hero__title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.heroBanner .hero__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.heroSubtext {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Botón primario con rojo UTN como acento */
+.buttons .button--primary {
+  background-color: #C8102E;
+  border-color: #C8102E;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.buttons .button--primary:hover {
+  background-color: #a50d26;
+  border-color: #a50d26;
+  color: #ffffff;
+}
+
+/* Botón secundario semitransparente */
+.buttons .button--secondary {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.buttons .button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .heroBanner .hero__title {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,224 @@
+/**
+ * SSL – UTN FRBA | custom.css
+ * Paleta basada en los colores institucionales de la UTN:
+ *   Azul principal : #003087
+ *   Rojo acento    : #C8102E
+ */
+
+/* ─── Variables de color – Modo claro ─────────────────────────────────────── */
+:root {
+  /* Azul UTN como color primario */
+  --ifm-color-primary:         #003087;
+  --ifm-color-primary-dark:    #002b79;
+  --ifm-color-primary-darker:  #002972;
+  --ifm-color-primary-darkest: #00225e;
+  --ifm-color-primary-light:   #003595;
+  --ifm-color-primary-lighter: #00379c;
+  --ifm-color-primary-lightest:#003eb0;
+
+  /* Tipografía */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* Código */
+  --ifm-code-font-size: 93%;
+  --ifm-code-border-radius: 4px;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 48, 135, 0.08);
+
+  /* Navbar */
+  --ifm-navbar-background-color: #003087;
+  --ifm-navbar-link-color: rgba(255, 255, 255, 0.88);
+  --ifm-navbar-link-hover-color: #ffffff;
+
+  /* Sidebar */
+  --ifm-sidebar-width: 280px;
+
+  /* Bordes y sombras */
+  --ifm-global-border-radius: 6px;
+}
+
+/* ─── Variables de color – Modo oscuro ────────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-color-primary:         #5b8dd9;
+  --ifm-color-primary-dark:    #4a7fd3;
+  --ifm-color-primary-darker:  #4278cf;
+  --ifm-color-primary-darkest: #2d64c0;
+  --ifm-color-primary-light:   #6c9bdf;
+  --ifm-color-primary-lighter: #74a2e2;
+  --ifm-color-primary-lightest:#8cb4e9;
+
+  --ifm-navbar-background-color: #1a1a2e;
+  --ifm-background-color: #0f0f1a;
+  --ifm-background-surface-color: #16162a;
+
+  --docusaurus-highlighted-code-line-bg: rgba(91, 141, 217, 0.15);
+}
+
+/* ─── Navbar ──────────────────────────────────────────────────────────────── */
+.navbar {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.navbar__logo {
+  height: 28px;
+}
+
+/* Links de la navbar en blanco sobre el azul UTN */
+.navbar__link {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-weight: 500;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #ffffff !important;
+}
+
+/* Botón GitHub en la navbar */
+.navbar__item.navbar__link[href*="github"] {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: border-color 0.2s;
+}
+
+.navbar__item.navbar__link[href*="github"]:hover {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* ─── Sidebar ─────────────────────────────────────────────────────────────── */
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+/* ─── Contenido principal ─────────────────────────────────────────────────── */
+.markdown h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.markdown h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.markdown h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* ─── Tablas ──────────────────────────────────────────────────────────────── */
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.markdown table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown table tr:nth-child(even) td {
+  background-color: rgba(0, 48, 135, 0.04);
+}
+
+[data-theme='dark'] .markdown table tr:nth-child(even) td {
+  background-color: rgba(91, 141, 217, 0.06);
+}
+
+/* ─── Bloques de código ───────────────────────────────────────────────────── */
+.prism-code {
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+/* Etiqueta del lenguaje en los bloques de código */
+.code-block-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Admonitions (tip / warning / danger / info) ────────────────────────── */
+.admonition {
+  border-radius: 6px;
+  margin: 1.2rem 0;
+}
+
+/* Tip con acento UTN */
+.admonition-tip {
+  --ifm-alert-background-color: rgba(0, 48, 135, 0.06);
+  --ifm-alert-border-color: var(--ifm-color-primary);
+}
+
+/* Danger con rojo UTN */
+.admonition-danger {
+  --ifm-alert-border-color: #C8102E;
+}
+
+/* ─── Paginación (anterior / siguiente) ───────────────────────────────────── */
+.pagination-nav__link {
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+/* ─── Footer ──────────────────────────────────────────────────────────────── */
+.footer {
+  font-size: 0.875rem;
+}
+
+.footer__title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* ─── Scrollbar (Chrome/Edge) – sutil y consistente ──────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-500);
+}
